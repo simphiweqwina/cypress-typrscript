@@ -1,7 +1,7 @@
-import { FormPage } from './../Page-objects/FormPage';
 import { And, Given, Then, When } from 'cypress-cucumber-preprocessor/steps';
 import { DashboardPage } from '../Page-objects/DashboardPage';
-import { LandingPage } from "../Page-objects/LandingPage";
+import { FormPage } from '../Page-objects/FormPage';
+import { LandingPage } from '../Page-objects/LandingPage';
 import { LoginPage } from '../Page-objects/LoginPage';
 
 let landingPage:LandingPage = new LandingPage();

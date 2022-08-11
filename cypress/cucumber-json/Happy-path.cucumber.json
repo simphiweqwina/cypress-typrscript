@@ -1,0 +1,187 @@
+[
+  {
+    "description": "    This file contains several tests that run using valid data-inputs + combination in order to validate Ultimate QA functionality as expected\n    The assumption is that the user already has an account and is signed out.",
+    "keyword": "Feature",
+    "name": "Happy Scenarios",
+    "line": 1,
+    "id": "happy-scenarios",
+    "tags": [],
+    "uri": "Happy-path.feature",
+    "elements": [
+      {
+        "id": "happy-scenarios;as-an-ultimate-qa-user-i-want-to-navigate-to-the-home-page-in-order-to-see-'ultimate-qa'-displayed-in-the-title",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "As an Ultimate QA user I want to navigate to the home page in order to see 'Ultimate QA' displayed in the title",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the user is on the homepage",
+            "result": {
+              "status": "passed",
+              "duration": 1615000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the text \"Ultimate QA\" will be displayed in the title",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "happy-scenarios;as-an-ultimate-qa-user-i-want-to-login-with-valid-credentials-and-log-out-in-order-to-see-the-homepage-displayed",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "As an Ultimate QA user I want to login with valid credentials and log out in order to see the homepage displayed",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "the user is on the homepage",
+            "result": {
+              "status": "passed",
+              "duration": 713000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the user navigates to \"Login automation\"",
+            "result": {
+              "status": "passed",
+              "duration": 19841000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "the user logs in with the username \"VQA@test.com\" and password \"VOSS1234\"",
+            "result": {
+              "status": "passed",
+              "duration": 6312000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "the user dashboard shall be displayed",
+            "result": {
+              "status": "passed",
+              "duration": 75000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "happy-scenarios;as-an-ultimate-qa-user-i-want-to-fill-out-form-with-valid-inputs-in-order-to-see-the-form-successfully-submitted",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "As an Ultimate QA user I want to fill out form with valid inputs in order to see the form successfully submitted",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "the user is on the homepage",
+            "result": {
+              "status": "passed",
+              "duration": 1302000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "the user navigates to \"Fill out forms\"",
+            "result": {
+              "status": "passed",
+              "duration": 3693000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Name",
+                      "Message"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "simphiwe",
+                      "Hello World"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 26,
+            "name": "the user enter form \"1\" data and submits the form",
+            "result": {
+              "status": "passed",
+              "duration": 20669000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Name",
+                      "Message"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "simphiwe",
+                      "Hello World"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 29,
+            "name": "the user enter form \"2\" data and submits the form",
+            "result": {
+              "status": "passed",
+              "duration": 20982000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "the user shall see the message \"Thanks for contacting us\" displayed on form \"1\"",
+            "result": {
+              "status": "passed",
+              "duration": 63000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
