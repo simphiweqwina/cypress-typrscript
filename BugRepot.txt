@@ -1,0 +1,15 @@
+Bug Report
+
+Description : When user hits tab several time a hidden menu appears
+
+Steps : 
+
+1. Navigate to https://ultimateqa.com/automation/
+2. Select to login screen
+3. Hit Tab btn 14/15 times
+
+Expected result : Tab moves from urlbar to email textbox
+		: The element with the tab is the highlighted element
+
+Actual result   : The tab moves to a hidden menu	
+		: The Email textbox never stops being highlighted
