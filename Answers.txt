@@ -1,0 +1,22 @@
+-----------
+Answers
+-----------
+
+1. - Log in via API instead of UI
+   - Remove all instances of "cy.wait" and wait for API responses instead
+
+2. - I  would setup a azure pipeline to do the following
+	* Pull branch from source control
+	* Restore packages 
+	* Run build 
+	* Run lint checks
+	* Run Unit tests
+	* Run UI sanity tests
+	* Copy/Store artifacts (reports and logs)
+	* Push to main
+
+3. I would use Neoload to do load testing. (this is the only type of performance test of done)
+
+4. I have not yet had expose to security/pen testing.
+5. I would use try{}catch{}. ALOT.
+
