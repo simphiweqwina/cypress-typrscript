@@ -27,8 +27,10 @@ And("the user shall see the message {string} displayed on form {string}",(msg:st
     formPage.VerifyFormSubmitted(+formIndex,msg)
 })
 And("the user navigates to {string}",(menuItemText:string)=>{
+    cy.on('uncaught:exception', (err, runnable) => {
+        return false
+    })
     landingPage.ClickMenuItem(menuItemText)
-    cy.end
 })
 
 When("the user logs in with the username {string} and password {string}",(username:string,password:string)=>{

@@ -1,0 +1,34 @@
+Test Plan
+
+1. Product :
+	(a) Platform - Web
+	(b) Test type - E2E	
+	(c) Environment - Prod
+			- chrome + firefox browser 
+2. Scope:
+	(a) In Scope
+		- Core Functionality (as described in assessment)
+ 
+	(b) Out of Scope
+		-  Responsiveness
+		-  Security
+
+3. Test approach
+	(a) Page Object Model
+		- Locators (xpaths) and DOM interactions in seperate class
+		- Features / Test cases in seperate file
+
+3. Risk 
+	- Website down time 
+	- Time (The project schedule is tight)
+
+4. Resources 
+	(a) Test Environment
+		- Nodejs installed
+		- Cypress 10 
+		- Admin rights 
+		- Screen size(1920,1080)
+		- Internet connection
+		
+	
+	

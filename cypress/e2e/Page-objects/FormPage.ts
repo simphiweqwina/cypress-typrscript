@@ -34,7 +34,7 @@ export class FormPage {
 
         cy.xpath(this.TargetFormByIndex(formindex)+this.SubmitBtn())
         .click();
-        cy.wait(20000)
+        cy.wait(200)
 
     }
 
